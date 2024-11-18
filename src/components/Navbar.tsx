@@ -24,7 +24,7 @@ export const Navbar = () => {
         {/* Logo  */}
         <Link href="/">
           <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 100 500 300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="100 0 300 300">
               <defs id="SvgjsDefs1001"></defs>
               <g id="SvgjsG1007" transform="matrix(1.5555210074103512,0,0,1.5555210074103512,97.22395037121267,-7.782271261845008)" fill="#ff7844">
                 <g xmlns="http://www.w3.org/2000/svg">
