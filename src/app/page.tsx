@@ -12,17 +12,24 @@ import { benefitOne, benefitTwo } from "@/components/data";
 export default function Home() {
   return (
     <Container >
-      <Hero />
+      <section id="home" >
+        <Hero />
+      </section>
       <hr style={{border: '1px solid rgb(255 116 6 / 12%)'}}></hr>
-      <Benefits data={benefitOne} />
+      <section id="servicos">
+        <Benefits data={benefitOne} />
+      </section>
+      <hr style={{border: '1px solid rgb(255 116 6 / 12%)'}}></hr>
+      
 
-      <hr style={{border: '1px solid rgb(255 116 6 / 12%)'}}></hr>
-      <SectionTitle preTitle="FAQ" title="Perguntas Frequentes">
-        Respondemos às dúvidas mais comuns para facilitar sua decisão e esclarecer
-        o processo. Ter essas respostas aqui pode aumentar a confiança no
-        serviço e reduzir a necessidade de suporte.
-      </SectionTitle>
-      <Faq />
+      <section id="duvidas">
+        <SectionTitle title="Perguntas Frequentes">
+          Respondemos às dúvidas mais comuns para facilitar sua decisão e esclarecer
+          o processo. Ter essas respostas aqui pode aumentar a confiança no
+          serviço e reduzir a necessidade de suporte.
+        </SectionTitle>
+        <Faq />
+      </section>
       <hr style={{border: '1px solid rgb(255 116 6 / 12%)'}}></hr>
     </Container>
   );

@@ -9,10 +9,11 @@ export function Footer() {
   return (
     <div className="relative">
       <Container>
-
-        <div className="text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Dembicki assessoria.
-        </div>
+        <section id="contato">
+          <div className="text-sm text-center text-gray-600 dark:text-gray-400">
+            Copyright © {new Date().getFullYear()}. Dembicki assessoria.
+          </div>
+        </section>
       </Container>
     </div>
   );
