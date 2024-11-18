@@ -13,7 +13,7 @@ export const Hero = () => {
               Como Podemos Ajudar:
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Nossa missão é transformar o sonho da cidadania em realidade, proporcionando um caminho mais simples, rápido e seguro. 
+              Nossa missão é transformar o sonho de obter um visto em realidade, proporcionando um caminho mais simples, rápido e seguro.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
