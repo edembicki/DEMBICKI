@@ -34,9 +34,7 @@ export function Video({ videoId }: Readonly<VideoProps>) {
             <span className="sr-only">Play Video</span>
           </button>
         )}
-        {playVideo && (
           <iframe className="w-full h-full aspect-video"  width="560" height="315" src="https://www.youtube.com/embed/h9gig2pKyuo?si=m8DQg5-lmEuZxTk0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-        )}
       </div>
     </Container>
   );

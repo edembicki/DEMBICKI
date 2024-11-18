@@ -25,7 +25,9 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Image
+            <img width={600} src="https://i.postimg.cc/PqqGgPKD/output-onlinepngtools.png"/>
+            
+            {/* <Image
               src={data.image}
               width={521}
               height={521}
@@ -33,7 +35,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               className={"object-cover"}
               placeholder="blur"
               blurDataURL={data.image.src}
-            />
+            /> */}
           </div>
         </div>
 

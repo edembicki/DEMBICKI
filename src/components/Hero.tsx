@@ -27,7 +27,8 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <Video videoId="fZ0D0cnR88E" />
+          {/* <Video videoId="fZ0D0cnR88E" /> */}
+          <img style={{marginTop: '-5rem', marginLeft: '-10rem'}} width={600} src="https://i.postimg.cc/ZnmzDjQb/file.png" />
         </div>
       </Container>
       <Container>
