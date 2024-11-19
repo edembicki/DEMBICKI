@@ -20,8 +20,6 @@ export default function Home() {
         <Benefits data={benefitOne} />
       </section>
       <hr style={{border: '1px solid rgb(255 116 6 / 12%)'}}></hr>
-      
-
       <section id="duvidas">
         <SectionTitle title="Perguntas Frequentes">
           Respondemos às dúvidas mais comuns para facilitar sua decisão e esclarecer
