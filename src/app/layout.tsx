@@ -5,8 +5,7 @@ import "./globals.css";
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { PopupWidget }  from "@/components/PopupWidget";
-
+import { PopupWidget } from "@/components/PopupWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} style={{background:' #a3a2600d'}}>
+      <body className={inter.className} style={{ background: " #a3a2600d" }}>
         <ThemeProvider attribute="class">
           <Navbar />
           <div>{children}</div>

@@ -722,6 +722,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .block {
   display: block;
 }
@@ -977,9 +980,6 @@ video {
 }
 .fill-current {
   fill: currentColor;
-}
-.object-cover {
-  object-fit: cover;
 }
 .\!p-0 {
   padding: 0px !important;
