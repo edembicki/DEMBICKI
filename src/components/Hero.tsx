@@ -1,12 +1,35 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
 import { Container } from "@/components/Container";
+import { Modal } from "antd"; // Assuming you're using Ant Design Modal
+import Image from "next/image";
 import heroImg from "../../public/img/hero.png";
-import { Video } from "./Video";
+import { Video } from "./Video"; // Ensure this is used if needed
 
 export const Hero = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible2, setIsModalVisible2] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  const showModal2 = () => {
+    setIsModalVisible2(true);
+  };
+
+  const handleCancel2 = () => {
+    setIsModalVisible2(false);
+  };
+
   return (
     <>
-      <Container className="flex flex-wrap ">
+      <Container className="flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
@@ -18,10 +41,7 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <b
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
-                style={{ background: "rgb(255 116 6)" }}
-              >
+              <b className="px-8 py-4 text-lg font-medium text-center text-white bg-orange-500 rounded-md">
                 <a href="https://wa.me/5541991291143" target="_blank">
                   +55 (41) 99129-1143
                 </a>
@@ -32,17 +52,31 @@ export const Hero = () => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           {/* <Video videoId="fZ0D0cnR88E" /> */}
           <img
-            style={{ marginTop: "-5rem", marginLeft: "-10rem" }}
-            width={600}
+            className="mt-[-5rem] ml-[-10rem] w-full max-w-lg"
             src="https://i.postimg.cc/ZnmzDjQb/file.png"
+            alt="Hero Image"
           />
         </div>
       </Container>
+
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Experiencia com <span className="text-indigo-600">+ de 10</span>{" "}
-            países.
+            Experiencia com + de 10 países com{" "}
+            <span
+              className="text-indigo-600 cursor-pointer"
+              onClick={showModal}
+            >
+              vistos
+            </span>{" "}
+            e{" "}
+            <span
+              className="text-indigo-600 cursor-pointer"
+              onClick={showModal2}
+            >
+              eTA
+            </span>
+            .
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
@@ -64,6 +98,43 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
+
+      {/* Modal for the PNG image */}
+      <Modal
+        title=""
+        visible={isModalVisible}
+        onCancel={handleCancel}
+        footer={null}
+        centered
+        width={600}
+      >
+        <div className="flex justify-center">
+          <Image
+            src="/img/vistos.png" // Replace with the actual path to your PNG image
+            alt="Experience Image"
+            width={700}
+            height={400}
+          />
+        </div>
+      </Modal>
+
+      <Modal
+        title=""
+        visible={isModalVisible2}
+        onCancel={handleCancel2}
+        footer={null}
+        centered
+        width={600}
+      >
+        <div className="flex justify-center">
+          <Image
+            src="/img/eta.png" // Replace with the actual path to your PNG image
+            alt="Experience Image"
+            width={700}
+            height={400}
+          />
+        </div>
+      </Modal>
     </>
   );
 };
